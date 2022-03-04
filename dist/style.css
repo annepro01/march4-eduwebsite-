@@ -178,4 +178,83 @@ a, a:visited, a:hover {
     font-size: 15px;
   }
 }
+
+.globalcampus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.globalcampus p {
+  font-size: 12px;
+}
+
+.globalcampus .wrapper {
+  padding-top: 20px;
+}
+
+.globalcampus .wrapper .box {
+  position: relative;
+  margin-top: 20px;
+}
+
+.globalcampus .wrapper .box img {
+  width: 300px;
+}
+
+.globalcampus .wrapper .box .layer__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background: transparent;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.globalcampus .wrapper .box .layer__text h1 {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.globalcampus .wrapper .box .layer__text:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+
+.globalcampus .wrapper .box .layer__text:hover h1 {
+  bottom: 50%;
+  opacity: 1;
+}
+
+@media (min-width: 40em) {
+  .globalcampus {
+    padding-bottom: 50px;
+  }
+  .globalcampus .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
